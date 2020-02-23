@@ -78,12 +78,16 @@ h1 {
 }
 
 .header .container {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
 ul {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -130,6 +134,7 @@ ul {
 
 .arrow-right {
   cursor: pointer;
+  -webkit-transform: scale(-1, 1);
   transform: scale(-1, 1);
   position: absolute;
   top: 47%;
@@ -158,6 +163,7 @@ ul {
   position: relative;
   z-index: 5;
   left: -218px;
+  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   top: -1px;
 }
@@ -170,6 +176,7 @@ ul {
 
 .iphone-blue {
   position: absolute;
+  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   top: 160px;
   left: 436px;
@@ -194,6 +201,7 @@ ul {
   height: 189px;
   width: 333px;
   background-image: url(./assets/phone_blue.png);
+  -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   background-position: -125px -119px;
 }
@@ -236,6 +244,7 @@ h3 {
 
 .services__item {
   width: 300px;
+  display: -webkit-box;
   display: flex;
   margin-bottom: 25px;
 }
@@ -245,8 +254,11 @@ h3 {
   height: 60px;
   border: 2px solid #666d89;
   border-radius: 100%;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-pack: center;
   justify-content: center;
   margin-top: 3px;
 }
