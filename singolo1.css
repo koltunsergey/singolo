@@ -1,0 +1,265 @@
+/*fonts*/
+@font-face {
+  font-family: lato-bold;
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/Lato-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: lato;
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: lato-black;
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/Lato-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: lato-light;
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/Lato-Light.ttf.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "lato-bold", sans-serif;
+  font-size: 12px;
+  overflow-x: hidden;
+  color: #fff;
+}
+
+.container {
+  width: 1020px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* header section */
+
+h1 {
+  width: 1px;
+  height: 1px;
+  display: none;
+}
+
+.header {
+  background-color: #2d303a;
+  height: 95px;
+  border-bottom: 5px solid #323746;
+}
+
+.logo {
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  padding-top: 29px;
+}
+
+.logo::after {
+  content: "*";
+  color: #f06c64;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
+
+.navigation {
+  padding-top: 42px;
+}
+
+.navigation li {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.navigation li::after {
+  content: "·";
+  color: #424657;
+  padding: 0 12.5px;
+}
+
+.navigation li:last-child::after {
+  display: none;
+}
+
+.navigation li:active a,
+.navigation li:first-child a {
+  color: #f06c64;
+}
+
+/* slider section */
+
+.slider {
+  background-color: #f06c64;
+
+  border-bottom: 5px solid #ea676b;
+}
+
+.slider .container {
+  position: relative;
+  height: 595px;
+}
+
+.arrow-right {
+  cursor: pointer;
+  transform: scale(-1, 1);
+  position: absolute;
+  top: 47%;
+  right: 40px;
+}
+
+.arrow-left {
+  cursor: pointer;
+  position: absolute;
+  top: 47%;
+}
+
+.iphone {
+  position: relative;
+  z-index: 10;
+}
+
+.shadow-green {
+  position: relative;
+  z-index: 5;
+  top: 25px;
+  left: -217px;
+}
+
+.shadow-blue {
+  position: relative;
+  z-index: 5;
+  left: -218px;
+  transform: scaleX(-1);
+  top: -1px;
+}
+
+.iphone-green {
+  position: absolute;
+  top: 28px;
+  left: 112px;
+}
+
+.iphone-blue {
+  position: absolute;
+  transform: rotate(90deg);
+  top: 160px;
+  left: 436px;
+}
+
+.iphone-image-green {
+  position: absolute;
+  top: 90px;
+  left: 14px;
+  z-index: 10;
+  width: 188px;
+  height: 333px;
+  background-image: url(./assets/phone_green.png);
+  background-position: -14px -135px;
+}
+
+.iphone-image-blue {
+  position: absolute;
+  top: 162px;
+  left: -59px;
+  z-index: 10;
+  height: 189px;
+  width: 333px;
+  background-image: url(./assets/phone_blue.png);
+  transform: rotate(-90deg);
+  background-position: -125px -119px;
+}
+
+/* our_services section */
+
+.our_services {
+  background-color: #f2f2f2;
+
+  padding: 60px 0;
+  color: #666d89;
+}
+
+.services {
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-family: "lato-black", sans-serif;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.our_services p {
+  font-family: "lato-light", sans-serif;
+  font-size: 18px;
+  margin-bottom: 40px;
+  text-align: justify;
+  line-height: 30px;
+  letter-spacing: -0.5px;
+}
+
+h3 {
+  font-family: "lato-black", sans-serif;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.services__item {
+  width: 300px;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.services__image {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #666d89;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3px;
+}
+
+.services__text {
+  width: 220px;
+  margin-left: 20px;
+}
+
+.services__item p {
+  font-family: "lato", sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: justify;
+  margin-bottom: 0;
+}
