@@ -99,8 +99,10 @@ p {
 
 .portfolio_items {
   list-style: none;
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
   justify-content: space-between;
   align-content: space-between;
 }
@@ -140,7 +142,9 @@ p {
 }
 
 .team {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -172,9 +176,11 @@ p {
 }
 
 .social {
+  display: -webkit-box;
   display: flex;
   width: 153px;
   list-style: none;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
